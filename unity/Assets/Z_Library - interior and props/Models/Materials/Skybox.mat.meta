@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 17becef6ac6e31d4a85d36e0c4960660
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 2100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 142099
+  packageName: Library - interior and props
+  packageVersion: 2.0
+  assetPath: Assets/Library - interior and props/Models/Materials/Skybox.mat
+  uploadId: 626702

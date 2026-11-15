@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class RoomUIController : MonoBehaviour
 {
@@ -323,7 +324,23 @@ public class RoomUIController : MonoBehaviour
         }
 
         ClearPasswordTarget();
-        listStatusText.text = $"입장 확인: {room.name} / {room.map} 맵";
-        // 팀의 실제 입장 기능은 이 위치에 연결하면 됩니다.
+
+        // 이번 단계에서는 카페 방만 실제 씬으로 이동해요.
+        if (room.map != "카페")
+        {
+            listStatusText.text = $"{room.map} 맵은 아직 입장을 준비 중이에요.";
+            return;
+        }
+
+        const string cafeScene = "StudyRoom_Cafe";
+
+        if (!Application.CanStreamedLevelBeLoaded(cafeScene))
+        {
+            listStatusText.text = "카페 씬을 열 수 없어요. Scene List를 확인해 주세요.";
+            return;
+        }
+
+        listStatusText.text = "카페에 입장하는 중이에요...";
+        SceneManager.LoadSceneAsync(cafeScene);
     }
 }

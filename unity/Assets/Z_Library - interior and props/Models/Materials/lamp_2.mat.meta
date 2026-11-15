@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: d9263f6ba03b9ce4aa4da8f665f1427f
+timeCreated: 1552733043
+licenseType: Store
+NativeFormatImporter:
+  mainObjectFileID: 2100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 142099
+  packageName: Library - interior and props
+  packageVersion: 2.0
+  assetPath: Assets/Library - interior and props/Models/Materials/lamp_2.mat
+  uploadId: 626702

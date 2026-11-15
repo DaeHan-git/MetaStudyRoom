@@ -1,0 +1,17 @@
+fileFormatVersion: 2
+guid: b1636b0c9ff2e574dad9c0893ab0c821
+timeCreated: 1531514916
+licenseType: Store
+NativeFormatImporter:
+  mainObjectFileID: 100100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 142099
+  packageName: Library - interior and props
+  packageVersion: 2.0
+  assetPath: Assets/Library - interior and props/Models/Books/Models/Prefabs/Book
+    (4).prefab
+  uploadId: 626702
