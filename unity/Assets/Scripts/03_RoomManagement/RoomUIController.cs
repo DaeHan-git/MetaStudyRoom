@@ -1,5 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
+using System.Security.Cryptography;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
@@ -29,7 +31,6 @@ public class RoomUIController : MonoBehaviour
     public TMP_InputField roomNameInput;
     public TMP_Dropdown categoryDropdown;
     public TMP_Dropdown maxPeopleDropdown;
-    public Toggle publicToggle;
     public Toggle privateToggle;
     public GameObject passwordLabel;
     public TMP_InputField createPasswordInput;
@@ -52,11 +53,77 @@ public class RoomUIController : MonoBehaviour
     public Sprite libraryImage;
     public Sprite schoolImage;
 
+    [Header("7번 패널: 맵별 씬 이름 (.unity 제외)")]
+    [SerializeField] string cafeSceneName = "StudyRoom_Cafe";
+    [SerializeField] string librarySceneName = "StudyRoom_Library";
+    [SerializeField] string schoolSceneName = "StudyRoom_School";
+
+    const string Coding = "코딩", Language = "어학", Certificate = "자격증";
+    bool enteringRoom;
+
+    // 이전 버전에서 드롭다운에 사용하던 프로그래밍 표기도 같은 탭에서 찾는다.
+    static string NormalizeCategory(string category)
+    {
+        string label = (category ?? "").Trim();
+        return label.Replace(" ", "") == "IT/프로그래밍" ? Coding : label;
+    }
+
+    [Serializable]
     class Room
     {
-        public string name, category, map, password;
+        public string name, category, map;
         public int current, capacity;
         public bool isPrivate, textChat, voiceChat;
+
+        // 비공개 방은 비밀번호 원문 대신 확인용 값만 저장해요.
+        public string passwordSalt;
+        public string passwordHash;
+
+        // 기존 CreateRoom()의 password = ... 코드를 그대로 사용할 수 있어요.
+        public string password
+        {
+            set
+            {
+                if (string.IsNullOrEmpty(value))
+                {
+                    passwordSalt = "";
+                    passwordHash = "";
+                    return;
+                }
+
+                byte[] salt = new byte[16];
+                using (var rng = RandomNumberGenerator.Create())
+                    rng.GetBytes(salt);
+
+                passwordSalt = Convert.ToBase64String(salt);
+                passwordHash = MakeHash(value, salt);
+            }
+        }
+
+        public bool MatchesPassword(string input)
+        {
+            if (string.IsNullOrEmpty(passwordSalt) ||
+                string.IsNullOrEmpty(passwordHash))
+                return false;
+
+            byte[] salt = Convert.FromBase64String(passwordSalt);
+            return MakeHash(input, salt) == passwordHash;
+        }
+
+        static string MakeHash(string input, byte[] salt)
+        {
+            using (var key = new Rfc2898DeriveBytes(
+                input, salt, 100000, HashAlgorithmName.SHA256))
+            {
+                return Convert.ToBase64String(key.GetBytes(32));
+            }
+        }
+    }
+
+    [Serializable]
+    class RoomSaveData
+    {
+        public List<Room> rooms;
     }
 
     readonly List<Room> rooms = new List<Room>();
@@ -67,15 +134,101 @@ public class RoomUIController : MonoBehaviour
     string pendingMap = "카페";
     Room passwordTarget;
 
+    string RoomSavePath =>
+        Path.Combine(Application.persistentDataPath, "study_rooms.json");
+
+    bool roomLoadFailed;
+
+    bool SaveRooms()
+    {
+        try
+        {
+            var data = new RoomSaveData { rooms = rooms };
+            string json = JsonUtility.ToJson(data, true);
+            File.WriteAllText(RoomSavePath, json);
+            return true;
+        }
+        catch (Exception e)
+        {
+            Debug.LogError($"방 목록 저장 실패: {e.Message}");
+            return false;
+        }
+    }
+
+    void LoadRooms()
+    {
+        rooms.Clear();
+        roomLoadFailed = false;
+
+        // 처음 실행한 경우에만 예시 방을 넣어요.
+        if (!File.Exists(RoomSavePath))
+        {
+            AddExampleRooms();
+            return;
+        }
+
+        try
+        {
+            string json = File.ReadAllText(RoomSavePath);
+            var data = JsonUtility.FromJson<RoomSaveData>(json);
+
+            if (data == null || data.rooms == null)
+                throw new InvalidDataException("방 목록 형식이 올바르지 않습니다.");
+
+            rooms.AddRange(data.rooms);
+        }
+        catch (Exception e)
+        {
+            // 읽지 못한 파일을 빈 목록으로 덮어쓰지 않도록 해요.
+            roomLoadFailed = true;
+            Debug.LogError($"방 목록 불러오기 실패: {RoomSavePath}\n{e.Message}");
+        }
+    }
+
+    void AddExampleRooms()
+    {
+        rooms.Add(new Room
+        {
+            name = "코딩 집중방",
+            category = "코딩",
+            map = "카페",
+            current = 3,
+            capacity = 6
+        });
+
+        rooms.Add(new Room
+        {
+            name = "조용한 도서관",
+            category = "자격증",
+            map = "도서관",
+            current = 5,
+            capacity = 8
+        });
+
+        rooms.Add(new Room
+        {
+            name = "우리끼리 스터디",
+            category = "어학",
+            map = "학교",
+            current = 1,
+            capacity = 4,
+            isPrivate = true,
+            password = "1234"
+        });
+    }
     void Start()
     {
+        categoryDropdown.ClearOptions();
+        categoryDropdown.AddOptions(new List<string> { Coding, Language, Certificate });
+        privateToggle.group = null;
+
         // 목록 화면
         openCreateButton.onClick.AddListener(OpenCreate);
         searchInput.onValueChanged.AddListener(_ => RefreshList());
         allButton.onClick.AddListener(() => SetFilter("전체"));
-        codingButton.onClick.AddListener(() => SetFilter("코딩"));
-        languageButton.onClick.AddListener(() => SetFilter("어학"));
-        certificateButton.onClick.AddListener(() => SetFilter("자격증"));
+        codingButton.onClick.AddListener(() => SetFilter(Coding));
+        languageButton.onClick.AddListener(() => SetFilter(Language));
+        certificateButton.onClick.AddListener(() => SetFilter(Certificate));
 
         // 방 만들기 화면
         createBackButton.onClick.AddListener(() => Show(roomListPanel));
@@ -94,32 +247,8 @@ public class RoomUIController : MonoBehaviour
         joinPasswordInput.gameObject.SetActive(false);
         listStatusText.text = "";
 
-        rooms.Add(new Room
-        {
-            name = "코딩 집중방",
-            category = "코딩",
-            map = "카페",
-            current = 3,
-            capacity = 6
-        });
-        rooms.Add(new Room
-        {
-            name = "조용한 도서관",
-            category = "자격증",
-            map = "도서관",
-            current = 5,
-            capacity = 8
-        });
-        rooms.Add(new Room
-        {
-            name = "우리끼리 스터디",
-            category = "어학",
-            map = "학교",
-            current = 1,
-            capacity = 4,
-            isPrivate = true,
-            password = "1234"
-        });
+        LoadRooms();
+        if (roomLoadFailed) openCreateButton.interactable = false;
 
         Show(roomListPanel);
         RefreshList();
@@ -137,7 +266,7 @@ public class RoomUIController : MonoBehaviour
         Show(createRoomPanel);
         roomNameInput.text = "";
         createPasswordInput.text = "";
-        publicToggle.isOn = true;
+        privateToggle.SetIsOnWithoutNotify(false);
         categoryDropdown.value = 0;
         maxPeopleDropdown.value = 2; // 2명, 4명, 6명, 8명 순서
         textChatToggle.isOn = true;
@@ -228,6 +357,13 @@ public class RoomUIController : MonoBehaviour
             voiceChat = voiceChatToggle.isOn
         });
 
+        if (!SaveRooms())
+        {
+            rooms.RemoveAt(0);
+            createStatusText.text = "방을 저장하지 못했어요. 다시 시도해 주세요.";
+            return;
+        }
+
         filter = "전체";
         searchInput.SetTextWithoutNotify("");
         ClearPasswordTarget();
@@ -254,11 +390,18 @@ public class RoomUIController : MonoBehaviour
         }
         visibleCards.Clear();
 
+        if (roomLoadFailed)
+        {
+            listStatusText.text = "방 목록을 불러오지 못했어요. Console을 확인해 주세요.";
+            return;
+        }
+
         string keyword = searchInput.text.Trim();
 
         foreach (Room room in rooms)
         {
-            if (filter != "전체" && room.category != filter) continue;
+            string category = NormalizeCategory(room.category);
+            if (filter != "전체" && category != filter) continue;
             if (room.name.IndexOf(keyword, StringComparison.OrdinalIgnoreCase) < 0)
                 continue;
 
@@ -269,8 +412,8 @@ public class RoomUIController : MonoBehaviour
             {
                 if (label.name == "RoomTitle") label.text = room.name;
                 if (label.name == "RoomInfo")
-                    label.text = $"{room.category} · {room.current}/{room.capacity}명"
-                        + (room.isPrivate ? " · 비공개" : "");
+                    label.text = $"{category} · {room.current}/{room.capacity}명"
+                        + (room.isPrivate ? " · 비공개" : " · 공개");
             }
 
             Sprite photo = room.map == "학교" ? schoolImage
@@ -299,6 +442,8 @@ public class RoomUIController : MonoBehaviour
 
     void SelectRoom(Room room)
     {
+        if (enteringRoom) return;
+
         if (room.current >= room.capacity)
         {
             ClearPasswordTarget();
@@ -316,7 +461,7 @@ public class RoomUIController : MonoBehaviour
             return;
         }
 
-        if (room.isPrivate && joinPasswordInput.text != room.password)
+        if (room.isPrivate && !room.MatchesPassword(joinPasswordInput.text))
         {
             listStatusText.text = "비밀번호가 일치하지 않아요.";
             joinPasswordInput.ActivateInputField();
@@ -325,22 +470,26 @@ public class RoomUIController : MonoBehaviour
 
         ClearPasswordTarget();
 
-        // 이번 단계에서는 카페 방만 실제 씬으로 이동해요.
-        if (room.map != "카페")
+        string sceneName;
+        switch (room.map)
         {
-            listStatusText.text = $"{room.map} 맵은 아직 입장을 준비 중이에요.";
+            case "카페": sceneName = cafeSceneName; break;
+            case "도서관": sceneName = librarySceneName; break;
+            case "학교": sceneName = schoolSceneName; break;
+            default:
+                listStatusText.text = $"알 수 없는 맵이에요: {room.map}";
+                return;
+        }
+
+        sceneName = (sceneName ?? "").Trim();
+        if (sceneName.Length == 0 || !Application.CanStreamedLevelBeLoaded(sceneName))
+        {
+            listStatusText.text = $"{room.map} 씬 이름과 Scene List 등록을 확인해 주세요: {sceneName}";
             return;
         }
 
-        const string cafeScene = "StudyRoom_Cafe";
-
-        if (!Application.CanStreamedLevelBeLoaded(cafeScene))
-        {
-            listStatusText.text = "카페 씬을 열 수 없어요. Scene List를 확인해 주세요.";
-            return;
-        }
-
-        listStatusText.text = "카페에 입장하는 중이에요...";
-        SceneManager.LoadSceneAsync(cafeScene);
+        enteringRoom = true;
+        listStatusText.text = $"{room.map}에 입장하는 중이에요...";
+        SceneManager.LoadSceneAsync(sceneName);
     }
 }
