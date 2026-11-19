@@ -6,6 +6,18 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scenes/03_RoomManagement/RoomManagementTest.unity
+    guid: c19653a4c7a424a498d50eadc0c177c9
+  - enabled: 1
+    path: Assets/Scenes/03_RoomManagement/Maps/Cafe/StudyRoom_Cafe.unity
+    guid: 177ab59dd35b49d4dad04cea97d67fa1
+  - enabled: 1
+    path: Assets/Scenes/03_RoomManagement/Maps/Library/StudyRoom_Library.unity
+    guid: e9d389d8fe9ad984c94fbf251a843613
+  - enabled: 1
+    path: Assets/Scenes/03_RoomManagement/Maps/School/StudyRoom_School.unity
+    guid: aecef4d0fde01f34db03814cfea27c33
+  - enabled: 0
     path: Assets/Scenes/02_Home/02_Home.unity
     guid: 99c9720ab356a0642a771bea13969a05
   m_configObjects:

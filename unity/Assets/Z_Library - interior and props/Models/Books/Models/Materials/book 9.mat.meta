@@ -1,0 +1,17 @@
+fileFormatVersion: 2
+guid: 5b61df760d5991946b6cc9acac7d3d68
+timeCreated: 1536789930
+licenseType: Store
+NativeFormatImporter:
+  mainObjectFileID: -1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 142099
+  packageName: Library - interior and props
+  packageVersion: 2.0
+  assetPath: Assets/Library - interior and props/Models/Books/Models/Materials/book
+    9.mat
+  uploadId: 626702

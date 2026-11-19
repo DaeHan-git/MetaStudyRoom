@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 158d888cada2edf4ba1f23bac7396af4
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 11400000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 142099
+  packageName: Library - interior and props
+  packageVersion: 2.0
+  assetPath: Assets/Library - interior and props/Scenes/UniversalRenderPipelineAsset_Renderer.asset
+  uploadId: 626702

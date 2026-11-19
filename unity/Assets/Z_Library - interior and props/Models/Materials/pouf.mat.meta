@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 77ef9ef7adfedf2458576d3eea8e347e
+timeCreated: 1552733043
+licenseType: Store
+NativeFormatImporter:
+  mainObjectFileID: 2100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 142099
+  packageName: Library - interior and props
+  packageVersion: 2.0
+  assetPath: Assets/Library - interior and props/Models/Materials/pouf.mat
+  uploadId: 626702
