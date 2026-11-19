@@ -61,8 +61,13 @@
     <Analyzer Include="C:\Program Files\Unity\Hub\Editor\6000.3.22f1\Editor\Data\Tools\BuildPipeline\Unity.SourceGenerators\Unity.UIToolkit.SourceGenerator.dll" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Scripts\01_Account\AccountManager.cs" />
+    <Compile Include="Assets\Scripts\02_Home\StudyRecordStore.cs" />
     <Compile Include="Assets\TutorialInfo\Scripts\Readme.cs" />
     <Compile Include="Assets\Scripts\03_RoomManagement\RoomUIController.cs" />
+    <Compile Include="Assets\Scripts\01_Account\AvatarSelectManager.cs" />
+    <Compile Include="Assets\Scripts\02_Home\MetaStudyUIActions.cs" />
+    <Compile Include="Assets\Scripts\02_Home\MetaStudyStatisticsBinder.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
