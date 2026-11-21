@@ -1,6 +1,8 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Firebase.App.Internal", "Firebase.App.Internal.csproj", "{7F1FF90D-0017-3D8E-9E72-2991E188D9DB}"
+EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp-Editor", "Assembly-CSharp-Editor.csproj", "{33C3DCDC-76CB-1FCD-751B-4E7E18D0E2DF}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp", "Assembly-CSharp.csproj", "{C3DA89E1-70C6-7D6C-993E-C8F831D35880}"
@@ -11,6 +13,10 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7F1FF90D-0017-3D8E-9E72-2991E188D9DB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7F1FF90D-0017-3D8E-9E72-2991E188D9DB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7F1FF90D-0017-3D8E-9E72-2991E188D9DB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7F1FF90D-0017-3D8E-9E72-2991E188D9DB}.Release|Any CPU.Build.0 = Release|Any CPU
 		{33C3DCDC-76CB-1FCD-751B-4E7E18D0E2DF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{33C3DCDC-76CB-1FCD-751B-4E7E18D0E2DF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{33C3DCDC-76CB-1FCD-751B-4E7E18D0E2DF}.Release|Any CPU.ActiveCfg = Release|Any CPU
