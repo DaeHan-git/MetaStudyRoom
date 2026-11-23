@@ -1,0 +1,42 @@
+# ==============================
+# Android
+# ==============================
+.gradle/
+**/build/
+local.properties
+.idea/
+*.iml
+captures/
+.externalNativeBuild/
+.cxx/
+
+# ==============================
+# Unity
+# ==============================
+unity/[Ll]ibrary/
+unity/[Tt]emp/
+unity/[Oo]bj/
+unity/[Bb]uild/
+unity/[Bb]uilds/
+unity/[Ll]ogs/
+unity/[Uu]ser[Ss]ettings/
+
+# ==============================
+# Spring Boot
+# ==============================
+backend/build/
+backend/target/
+backend/.gradle/
+
+# ==============================
+# OS
+# ==============================
+.DS_Store
+Thumbs.db
+
+# ==============================
+# Secret / Environment
+# ==============================
+.env
+*.jks
+*.keystore

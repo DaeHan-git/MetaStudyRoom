@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 90c88b4a5c594f341be3a9805aee9ca5
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 2100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 142099
+  packageName: Library - interior and props
+  packageVersion: 2.0
+  assetPath: Assets/Library - interior and props/Models/Materials/wall_out.mat
+  uploadId: 626702
