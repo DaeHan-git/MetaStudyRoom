@@ -1,8 +1,14 @@
+using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerJoystickMovement : MonoBehaviour
 {
+    [Header("Persistence")]
+    [Tooltip("씬 전환 시 플레이어 오브젝트를 파괴하지 않고 유지합니다.")]
+    public bool keepAcrossScenes = true;
+
     [Header("Movement Settings")]
     public float moveSpeed = 5f;
     public float rotationSpeed = 10f;
@@ -23,10 +29,15 @@ public class PlayerJoystickMovement : MonoBehaviour
     public GameObject sitTimerTextObj;
     private TextMeshProUGUI sitTimerText;
     private float sittingTime = 0f;
-    private float sitStartTime = 0f;
 
-    [Header("Stand Up Button UI")]
-    public GameObject standUpButtonObj; // 일어서기 버튼 GameObject
+
+    [Header("Away Mode Reference")]
+    [Tooltip("자리비움(true)일 때 앉기 타이머를 일시정지하고, 공부중(false)일 때 재개합니다.")]
+    public AwayModeController awayModeController;
+
+    [Header("Sitting Action Buttons UI")]
+    [Tooltip("앉아있을 때 화면에 표시할 버튼들(일어서기 버튼 포함 가능)")]
+    public List<GameObject> sitActionButtonObjs = new List<GameObject>();
 
     private CharacterController characterController;
     private Rigidbody rb;
@@ -37,24 +48,51 @@ public class PlayerJoystickMovement : MonoBehaviour
     private bool lastIsMoving = false;
     private bool isSitting = false;
 
+    void Awake()
+    {
+        if (keepAcrossScenes)
+        {
+            DontDestroyOnLoad(gameObject);
+        }
+    }
+
+    void OnEnable()
+    {
+        SceneManager.sceneLoaded += OnSceneLoaded;
+    }
+
+    
+
+  
+
+    private void RefreshCameraReferences()
+    {
+        if (Camera.main != null)
+        {
+            cameraTransform = Camera.main.transform;
+            cameraFollow = cameraTransform.GetComponent<CameraFollow>();
+        }
+        if (cameraFollow == null)
+        {
+            cameraFollow = FindFirstObjectByType<CameraFollow>();
+        }
+        if (cameraTransform == null && cameraFollow != null)
+        {
+            cameraTransform = cameraFollow.transform;
+        }
+    }
+
     void Start()
     {
         characterController = GetComponent<CharacterController>();
         rb = GetComponent<Rigidbody>();
         animator = GetComponent<Animator>();
 
-        if (cameraTransform == null && Camera.main != null)
-        {
-            cameraTransform = Camera.main.transform;
-        }
+        RefreshCameraReferences();
 
-        if (cameraFollow == null && cameraTransform != null)
+        if (awayModeController == null)
         {
-            cameraFollow = cameraTransform.GetComponent<CameraFollow>();
-        }
-        if (cameraFollow == null)
-        {
-            cameraFollow = FindFirstObjectByType<CameraFollow>();
+            awayModeController = FindFirstObjectByType<AwayModeController>();
         }
 
         isUsingCharacterController = (characterController != null);
@@ -71,10 +109,7 @@ public class PlayerJoystickMovement : MonoBehaviour
             sitTimerTextObj.SetActive(false);
         }
 
-        if (standUpButtonObj != null)
-        {
-            standUpButtonObj.SetActive(false);
-        }
+        SetSitActionButtonsActive(false);
 
         if (joystickObj != null)
         {
@@ -86,11 +121,15 @@ public class PlayerJoystickMovement : MonoBehaviour
     {
         if (!isLocalPlayer) return;
 
-        // 1. 앉아있는 상태일 때 (조이스틱 숨김, 타이머만 작동)
+        // 1. 앉아있는 상태일 때 (조이스틱 숨김, 자리비움이 아닐 때만 타이머 가동)
         if (isSitting)
         {
-            sittingTime += Time.deltaTime;
-            UpdateTimerUI();
+            bool isAway = (awayModeController != null && awayModeController.IsAway);
+            if (!isAway)
+            {
+                sittingTime += Time.deltaTime;
+                UpdateTimerUI();
+            }
             return;
         }
 
@@ -190,8 +229,9 @@ public class PlayerJoystickMovement : MonoBehaviour
 
         isSitting = true;
         sittingTime = 0f;
-        sitStartTime = Time.time;
         joystickInput = Vector2.zero;
+
+        UpdateTimerUI();
 
         if (joystickObj != null)
         {
@@ -203,10 +243,7 @@ public class PlayerJoystickMovement : MonoBehaviour
             sitTimerTextObj.SetActive(true);
         }
 
-        if (standUpButtonObj != null)
-        {
-            standUpButtonObj.SetActive(true);
-        }
+        SetSitActionButtonsActive(true);
 
         transform.position = chairSitPos.position;
         transform.rotation = chairSitPos.rotation;
@@ -232,7 +269,7 @@ public class PlayerJoystickMovement : MonoBehaviour
         if (!isLocalPlayer) return;
         if (!isSitting) return;
 
-        float totalSitDuration = Time.time - sitStartTime;
+        float totalStudyDuration = sittingTime;
         isSitting = false;
         joystickInput = Vector2.zero;
 
@@ -249,19 +286,16 @@ public class PlayerJoystickMovement : MonoBehaviour
             sitTimerTextObj.SetActive(false);
         }
 
-        if (standUpButtonObj != null)
-        {
-            standUpButtonObj.SetActive(false);
-        }
+        SetSitActionButtonsActive(false);
 
         if (animator != null)
         {
             animator.SetBool("IsSit", false);
 
-            if (totalSitDuration >= 30f)
+            if (totalStudyDuration >= 30f)
             {
                 animator.SetTrigger("LevelUp");
-                Debug.Log($"30초 이상 앉아있다가 일어남! 총 시간: {totalSitDuration:F1}초 -> 레벨업 트리거 발동");
+                Debug.Log($"실제 공부 시간 30초 이상 달성 후 기립! 누적 시간: {totalStudyDuration:F1}초 -> 레벨업 트리거 발동");
             }
         }
 
@@ -269,5 +303,61 @@ public class PlayerJoystickMovement : MonoBehaviour
         {
             cameraFollow.SetSittingState(false);
         }
+    }
+
+    private void SetSitActionButtonsActive(bool active)
+    {
+        for (int i = 0; i < sitActionButtonObjs.Count; i++)
+        {
+            if (sitActionButtonObjs[i] != null)
+            {
+                sitActionButtonObjs[i].SetActive(active);
+            }
+        }
+    }
+
+    // 추가 버튼용 예시 메서드 (원하는 기능으로 교체/추가해서 버튼 OnClick에 연결)
+    public void OnSitExtraAction1()
+    {
+        if (!isLocalPlayer || !isSitting) return;
+        Debug.Log("앉은 상태 추가 버튼 1 클릭");
+    }
+    private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
+    {
+        RefreshCameraReferences();
+        MoveToSceneSpawnPoint();
+    }
+
+    public void MoveToSceneSpawnPoint()
+    {
+        SceneSpawnPoint spawnPoint = FindFirstObjectByType<SceneSpawnPoint>();
+        if (spawnPoint == null)
+        {
+            Debug.LogWarning($"[PlayerJoystickMovement] 현재 씬('{SceneManager.GetActiveScene().name}')에 SceneSpawnPoint가 없습니다.");
+            return;
+        }
+
+        // 앉아있는 상태로 씬이 바뀌었다면 앉기 상태 해제
+        if (isSitting)
+        {
+            StandUp();
+        }
+
+        // CharacterController / Rigidbody가 좌표를 덮어쓰지 않도록 잠시 비활성화 후 이동
+        bool hadCC = (characterController != null && characterController.enabled);
+        if (hadCC) characterController.enabled = false;
+
+        if (rb != null)
+        {
+            rb.linearVelocity = Vector3.zero;
+            rb.angularVelocity = Vector3.zero;
+        }
+
+        transform.position = spawnPoint.transform.position;
+        transform.rotation = spawnPoint.transform.rotation;
+
+        if (hadCC) characterController.enabled = true;
+
+        Debug.Log($"[PlayerJoystickMovement] 스폰 위치('{spawnPoint.name}')로 이동 완료: {spawnPoint.transform.position}");
     }
 }
