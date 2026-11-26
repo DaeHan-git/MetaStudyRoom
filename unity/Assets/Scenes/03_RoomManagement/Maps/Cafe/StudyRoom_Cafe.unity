@@ -3455,8 +3455,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 6275428917329009977, guid: 926cca285c2783241b76c8c2138a96be, type: 3}
   m_PrefabInstance: {fileID: 220213371}
   m_PrefabAsset: {fileID: 0}
-<<<<<<< HEAD
-=======
 --- !u!1 &506999733
 GameObject:
   m_ObjectHideFlags: 0
@@ -3594,7 +3592,6 @@ MonoBehaviour:
     m_VarianceClampScale: 0.9
     m_ContrastAdaptiveSharpening: 0
   m_Version: 2
->>>>>>> 677b6e94d86198058adb6fb64c3dd0f1ddfa1a40
 --- !u!1001 &510804002
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10040,54 +10037,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 926cca285c2783241b76c8c2138a96be, type: 3}
-<<<<<<< HEAD
---- !u!1 &1308014867
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1308014869}
-  - component: {fileID: 1308014868}
-  m_Layer: 0
-  m_Name: SpawnPoint
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &1308014868
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1308014867}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5f25d727fac914443b225a5a3b03e6e8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::SceneSpawnPoint
-  spawnId: Default
---- !u!4 &1308014869
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1308014867}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 6.164, y: 0.547, z: 10.13}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-=======
->>>>>>> 677b6e94d86198058adb6fb64c3dd0f1ddfa1a40
 --- !u!4 &1323850576 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6275428917329009977, guid: 926cca285c2783241b76c8c2138a96be, type: 3}
@@ -15811,10 +15760,7 @@ PrefabInstance:
 SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
-<<<<<<< HEAD
-=======
   - {fileID: 506999736}
->>>>>>> 677b6e94d86198058adb6fb64c3dd0f1ddfa1a40
   - {fileID: 463716358}
   - {fileID: 1654422466}
   - {fileID: 1538361871}
@@ -15832,7 +15778,3 @@ SceneRoots:
   - {fileID: 1930104}
   - {fileID: 1414091685}
   - {fileID: 1767357153}
-<<<<<<< HEAD
-  - {fileID: 1308014869}
-=======
->>>>>>> 677b6e94d86198058adb6fb64c3dd0f1ddfa1a40

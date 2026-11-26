@@ -1,7 +1,4 @@
-<<<<<<< HEAD
-=======
 using System;
->>>>>>> 677b6e94d86198058adb6fb64c3dd0f1ddfa1a40
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.EventSystems;
@@ -32,14 +29,6 @@ public class AccountManager : MonoBehaviour
     private Color agreedTextColor = Color.white;                       // 흰색 글자
 
     private EventSystem eventSystem;
-<<<<<<< HEAD
-
-    private void Start()
-    {
-        eventSystem = EventSystem.current;
-        ShowLoginPanel();
-        UpdateAgreeTagUI();
-=======
     private TMP_InputField loginEmailInput;
     private TMP_InputField loginPasswordInput;
     private TMP_Text statusText;
@@ -123,7 +112,6 @@ public class AccountManager : MonoBehaviour
     {
         FirebaseManager.AuthStateChanged -= OnAuthStateChanged;
         if (loginButton != null) loginButton.onClick.RemoveListener(OnClickLogin);
->>>>>>> 677b6e94d86198058adb6fb64c3dd0f1ddfa1a40
     }
 
     private void Update()
@@ -175,8 +163,6 @@ public class AccountManager : MonoBehaviour
     // 1. 로그인 화면 띄우기
     public void ShowLoginPanel()
     {
-<<<<<<< HEAD
-=======
         if (!isRunning) ShowLoginPanelCore();
     }
 
@@ -187,7 +173,6 @@ public class AccountManager : MonoBehaviour
         pendingUid = null;
         profileUid = null;
         if (profilePanel != null) profilePanel.SetActive(false);
->>>>>>> 677b6e94d86198058adb6fb64c3dd0f1ddfa1a40
         if (loginPanel != null) loginPanel.SetActive(true);
         if (signUpPanel != null) signUpPanel.SetActive(false);
     }
@@ -195,14 +180,11 @@ public class AccountManager : MonoBehaviour
     // 2. 회원가입 화면 띄우기
     public void ShowSignUpPanel()
     {
-<<<<<<< HEAD
-=======
         if (!isRunning) ShowSignUpPanelCore();
     }
 
     private void ShowSignUpPanelCore()
     {
->>>>>>> 677b6e94d86198058adb6fb64c3dd0f1ddfa1a40
         if (loginPanel != null) loginPanel.SetActive(false);
         if (signUpPanel != null) signUpPanel.SetActive(true);
         ResetSignUpFields();
@@ -229,39 +211,6 @@ public class AccountManager : MonoBehaviour
     }
 
     // 4. 가입하기 버튼 클릭 시 처리
-<<<<<<< HEAD
-    public void OnClickSignUpSubmit()
-    {
-        if (!isAgreed)
-        {
-            Debug.LogWarning("[경고] 이용약관에 동의해야 회원가입이 가능합니다.");
-            return;
-        }
-
-        string nickname = nicknameInput.text;
-        string email = emailInput.text;
-        string password = passwordInput.text;
-        string passwordConfirm = passwordConfirmInput.text;
-
-        if (string.IsNullOrEmpty(nickname) || string.IsNullOrEmpty(email) ||
-            string.IsNullOrEmpty(password) || string.IsNullOrEmpty(passwordConfirm))
-        {
-            Debug.LogWarning("[경고] 모든 항목을 입력해 주세요.");
-            return;
-        }
-
-        if (password != passwordConfirm)
-        {
-            Debug.LogWarning("[경고] 비밀번호가 일치하지 않습니다.");
-            return;
-        }
-
-        // TODO: 추후 DB 연동 시 INSERT 처리 메서드 호출 위치
-        Debug.Log($"[회원가입 성공] DB 저장 완료 - Nickname: {nickname}, Email: {email}");
-
-        // 성공 후 로그인 화면으로 전환
-        ShowLoginPanel();
-=======
     public async void OnClickSignUpSubmit()
     {
         if (isRunning) return;
@@ -481,7 +430,6 @@ public class AccountManager : MonoBehaviour
         buttonTextRect.offsetMin = buttonTextRect.offsetMax = Vector2.zero;
         profilePanel.SetActive(false);
         status.transform.SetAsLastSibling();
->>>>>>> 677b6e94d86198058adb6fb64c3dd0f1ddfa1a40
     }
 
     // 입력 필드 초기화

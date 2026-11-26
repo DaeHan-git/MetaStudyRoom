@@ -1,59 +1,5 @@
 {
   "Version": 1,
-<<<<<<< HEAD
-  "WorkspaceRootPath": "C:\\Users\\hoc19\\Downloads\\MetaStudyRoom-integration-first\\MetaStudyRoom-integration-first\\unity\\",
-  "Documents": [
-    {
-      "AbsoluteMoniker": "D:0:0:{C3DA89E1-70C6-7D6C-993E-C8F831D35880}|Assembly-CSharp.csproj|c:\\users\\hoc19\\downloads\\metastudyroom-integration-first\\metastudyroom-integration-first\\unity\\assets\\scripts\\05_character\\playerjoystickmovement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C3DA89E1-70C6-7D6C-993E-C8F831D35880}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\05_character\\playerjoystickmovement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C3DA89E1-70C6-7D6C-993E-C8F831D35880}|Assembly-CSharp.csproj|C:\\Users\\hoc19\\Downloads\\MetaStudyRoom-integration-first\\MetaStudyRoom-integration-first\\unity\\assets\\scripts\\05_character\\camerafollow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C3DA89E1-70C6-7D6C-993E-C8F831D35880}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\05_character\\camerafollow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C3DA89E1-70C6-7D6C-993E-C8F831D35880}|Assembly-CSharp.csproj|C:\\Users\\hoc19\\Downloads\\MetaStudyRoom-integration-first\\MetaStudyRoom-integration-first\\unity\\assets\\scripts\\05_character\\db\\avatarappearanceapplier.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C3DA89E1-70C6-7D6C-993E-C8F831D35880}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\05_character\\db\\avatarappearanceapplier.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C3DA89E1-70C6-7D6C-993E-C8F831D35880}|Assembly-CSharp.csproj|C:\\Users\\hoc19\\Downloads\\MetaStudyRoom-integration-first\\MetaStudyRoom-integration-first\\unity\\assets\\scripts\\05_character\\db\\avatarappearancedata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C3DA89E1-70C6-7D6C-993E-C8F831D35880}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\05_character\\db\\avatarappearancedata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C3DA89E1-70C6-7D6C-993E-C8F831D35880}|Assembly-CSharp.csproj|C:\\Users\\hoc19\\Downloads\\MetaStudyRoom-integration-first\\MetaStudyRoom-integration-first\\unity\\assets\\scripts\\05_character\\db\\dummyavartarservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C3DA89E1-70C6-7D6C-993E-C8F831D35880}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\05_character\\db\\dummyavartarservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C3DA89E1-70C6-7D6C-993E-C8F831D35880}|Assembly-CSharp.csproj|C:\\Users\\hoc19\\Downloads\\MetaStudyRoom-integration-first\\MetaStudyRoom-integration-first\\unity\\assets\\scripts\\05_character\\db\\avatarappearancetester.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C3DA89E1-70C6-7D6C-993E-C8F831D35880}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\05_character\\db\\avatarappearancetester.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C3DA89E1-70C6-7D6C-993E-C8F831D35880}|Assembly-CSharp.csproj|C:\\Users\\hoc19\\Downloads\\MetaStudyRoom-integration-first\\MetaStudyRoom-integration-first\\unity\\assets\\scripts\\05_character\\virtualjoystick.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C3DA89E1-70C6-7D6C-993E-C8F831D35880}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\05_character\\virtualjoystick.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C3DA89E1-70C6-7D6C-993E-C8F831D35880}|Assembly-CSharp.csproj|C:\\Users\\hoc19\\Downloads\\MetaStudyRoom-integration-first\\MetaStudyRoom-integration-first\\unity\\assets\\scripts\\05_character\\db\\avatarpartid.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C3DA89E1-70C6-7D6C-993E-C8F831D35880}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\05_character\\db\\avatarpartid.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C3DA89E1-70C6-7D6C-993E-C8F831D35880}|Assembly-CSharp.csproj|C:\\Users\\hoc19\\Downloads\\MetaStudyRoom-integration-first\\MetaStudyRoom-integration-first\\unity\\assets\\scripts\\05_character\\chairinteraction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C3DA89E1-70C6-7D6C-993E-C8F831D35880}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\05_character\\chairinteraction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C3DA89E1-70C6-7D6C-993E-C8F831D35880}|Assembly-CSharp.csproj|C:\\Users\\hoc19\\Downloads\\MetaStudyRoom-integration-first\\MetaStudyRoom-integration-first\\unity\\assets\\scripts\\common\\firebaseconnectiontest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C3DA89E1-70C6-7D6C-993E-C8F831D35880}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\common\\firebaseconnectiontest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\UnityProjects\\GitHub\\MetaStudyRoom\\unity\\Assets\\_Project\\Editor\\MetaStudyStatisticsInstaller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C3DA89E1-70C6-7D6C-993E-C8F831D35880}|Assembly-CSharp.csproj|C:\\Users\\hoc19\\Downloads\\MetaStudyRoom-integration-first\\MetaStudyRoom-integration-first\\unity\\assets\\scripts\\03_roommanagement\\roomuicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C3DA89E1-70C6-7D6C-993E-C8F831D35880}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\03_roommanagement\\roomuicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\hoc19\\Downloads\\MetaStudyRoom-integration-first\\MetaStudyRoom-integration-first\\unity\\assets\\scripts\\05_character\\buttonpressedspritetoggle.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:assets\\scripts\\05_character\\buttonpressedspritetoggle.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-=======
   "WorkspaceRootPath": "C:\\UnityProjects\\GitHub\\MetaStudyRoom\\unity\\",
   "Documents": [
     {
@@ -67,7 +13,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{C3DA89E1-70C6-7D6C-993E-C8F831D35880}|Assembly-CSharp.csproj|C:\\UnityProjects\\GitHub\\MetaStudyRoom\\unity\\assets\\scripts\\03_roommanagement\\roomuicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C3DA89E1-70C6-7D6C-993E-C8F831D35880}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\03_roommanagement\\roomuicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
->>>>>>> 677b6e94d86198058adb6fb64c3dd0f1ddfa1a40
     }
   ],
   "DocumentGroupContainers": [
@@ -77,117 +22,6 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-<<<<<<< HEAD
-          "SelectedChildIndex": 8,
-          "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "AvatarPartId.cs",
-              "DocumentMoniker": "C:\\Users\\hoc19\\Downloads\\MetaStudyRoom-integration-first\\MetaStudyRoom-integration-first\\unity\\Assets\\Scripts\\05_Character\\DB\\AvatarPartId.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\05_Character\\DB\\AvatarPartId.cs",
-              "ToolTip": "C:\\Users\\hoc19\\Downloads\\MetaStudyRoom-integration-first\\MetaStudyRoom-integration-first\\unity\\Assets\\Scripts\\05_Character\\DB\\AvatarPartId.cs",
-              "RelativeToolTip": "Assets\\Scripts\\05_Character\\DB\\AvatarPartId.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-11-23T12:35:55.998Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "DummyAvartarService.cs",
-              "DocumentMoniker": "C:\\Users\\hoc19\\Downloads\\MetaStudyRoom-integration-first\\MetaStudyRoom-integration-first\\unity\\Assets\\Scripts\\05_Character\\DB\\DummyAvartarService.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\05_Character\\DB\\DummyAvartarService.cs",
-              "ToolTip": "C:\\Users\\hoc19\\Downloads\\MetaStudyRoom-integration-first\\MetaStudyRoom-integration-first\\unity\\Assets\\Scripts\\05_Character\\DB\\DummyAvartarService.cs",
-              "RelativeToolTip": "Assets\\Scripts\\05_Character\\DB\\DummyAvartarService.cs",
-              "ViewState": "AgIAACYAAAAAAAAAAAAswD0AAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-11-23T11:41:19.907Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "AvatarAppearanceTester.cs",
-              "DocumentMoniker": "C:\\Users\\hoc19\\Downloads\\MetaStudyRoom-integration-first\\MetaStudyRoom-integration-first\\unity\\Assets\\Scripts\\05_Character\\DB\\AvatarAppearanceTester.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\05_Character\\DB\\AvatarAppearanceTester.cs",
-              "ToolTip": "C:\\Users\\hoc19\\Downloads\\MetaStudyRoom-integration-first\\MetaStudyRoom-integration-first\\unity\\Assets\\Scripts\\05_Character\\DB\\AvatarAppearanceTester.cs",
-              "RelativeToolTip": "Assets\\Scripts\\05_Character\\DB\\AvatarAppearanceTester.cs",
-              "ViewState": "AgIAAGkAAAAAAAAAAAAAwG8AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-11-23T11:39:05.627Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "AvatarAppearanceApplier.cs",
-              "DocumentMoniker": "C:\\Users\\hoc19\\Downloads\\MetaStudyRoom-integration-first\\MetaStudyRoom-integration-first\\unity\\Assets\\Scripts\\05_Character\\DB\\AvatarAppearanceApplier.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\05_Character\\DB\\AvatarAppearanceApplier.cs",
-              "ToolTip": "C:\\Users\\hoc19\\Downloads\\MetaStudyRoom-integration-first\\MetaStudyRoom-integration-first\\unity\\Assets\\Scripts\\05_Character\\DB\\AvatarAppearanceApplier.cs",
-              "RelativeToolTip": "Assets\\Scripts\\05_Character\\DB\\AvatarAppearanceApplier.cs",
-              "ViewState": "AgIAAAUAAAAAAAAAAAAAwIUAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-11-23T11:35:41.787Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "AvatarAppearanceData.cs",
-              "DocumentMoniker": "C:\\Users\\hoc19\\Downloads\\MetaStudyRoom-integration-first\\MetaStudyRoom-integration-first\\unity\\Assets\\Scripts\\05_Character\\DB\\AvatarAppearanceData.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\05_Character\\DB\\AvatarAppearanceData.cs",
-              "ToolTip": "C:\\Users\\hoc19\\Downloads\\MetaStudyRoom-integration-first\\MetaStudyRoom-integration-first\\unity\\Assets\\Scripts\\05_Character\\DB\\AvatarAppearanceData.cs",
-              "RelativeToolTip": "Assets\\Scripts\\05_Character\\DB\\AvatarAppearanceData.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-11-23T11:34:48.202Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "ButtonPressedSpriteToggle.cs",
-              "DocumentMoniker": "C:\\Users\\hoc19\\Downloads\\MetaStudyRoom-integration-first\\MetaStudyRoom-integration-first\\unity\\Assets\\Scripts\\05_Character\\ButtonPressedSpriteToggle.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\05_Character\\ButtonPressedSpriteToggle.cs",
-              "ToolTip": "C:\\Users\\hoc19\\Downloads\\MetaStudyRoom-integration-first\\MetaStudyRoom-integration-first\\unity\\Assets\\Scripts\\05_Character\\ButtonPressedSpriteToggle.cs",
-              "RelativeToolTip": "Assets\\Scripts\\05_Character\\ButtonPressedSpriteToggle.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-11-23T10:09:33.25Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "CameraFollow.cs",
-              "DocumentMoniker": "C:\\Users\\hoc19\\Downloads\\MetaStudyRoom-integration-first\\MetaStudyRoom-integration-first\\unity\\Assets\\Scripts\\05_Character\\CameraFollow.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\05_Character\\CameraFollow.cs",
-              "ToolTip": "C:\\Users\\hoc19\\Downloads\\MetaStudyRoom-integration-first\\MetaStudyRoom-integration-first\\unity\\Assets\\Scripts\\05_Character\\CameraFollow.cs",
-              "RelativeToolTip": "Assets\\Scripts\\05_Character\\CameraFollow.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAFoAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-11-23T09:08:36.442Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "VirtualJoystick.cs",
-              "DocumentMoniker": "C:\\Users\\hoc19\\Downloads\\MetaStudyRoom-integration-first\\MetaStudyRoom-integration-first\\unity\\Assets\\Scripts\\05_Character\\VirtualJoystick.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\05_Character\\VirtualJoystick.cs",
-              "ToolTip": "C:\\Users\\hoc19\\Downloads\\MetaStudyRoom-integration-first\\MetaStudyRoom-integration-first\\unity\\Assets\\Scripts\\05_Character\\VirtualJoystick.cs",
-              "RelativeToolTip": "Assets\\Scripts\\05_Character\\VirtualJoystick.cs",
-              "ViewState": "AgIAADIAAAAAAAAAAAAuwGMAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-11-23T09:06:08.092Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "PlayerJoystickMovement.cs",
-              "DocumentMoniker": "C:\\Users\\hoc19\\Downloads\\MetaStudyRoom-integration-first\\MetaStudyRoom-integration-first\\unity\\Assets\\Scripts\\05_Character\\PlayerJoystickMovement.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\05_Character\\PlayerJoystickMovement.cs",
-              "ToolTip": "C:\\Users\\hoc19\\Downloads\\MetaStudyRoom-integration-first\\MetaStudyRoom-integration-first\\unity\\Assets\\Scripts\\05_Character\\PlayerJoystickMovement.cs",
-              "RelativeToolTip": "Assets\\Scripts\\05_Character\\PlayerJoystickMovement.cs",
-              "ViewState": "AgIAAPoAAAAAAAAAAAAkwBsBAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-11-23T08:37:02.128Z",
-=======
           "SelectedChildIndex": 0,
           "Children": [
             {
@@ -201,68 +35,26 @@
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-11-19T02:20:31.909Z",
->>>>>>> 677b6e94d86198058adb6fb64c3dd0f1ddfa1a40
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-<<<<<<< HEAD
-              "DocumentIndex": 8,
-              "Title": "ChairInteraction.cs",
-              "DocumentMoniker": "C:\\Users\\hoc19\\Downloads\\MetaStudyRoom-integration-first\\MetaStudyRoom-integration-first\\unity\\Assets\\Scripts\\05_Character\\ChairInteraction.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\05_Character\\ChairInteraction.cs",
-              "ToolTip": "C:\\Users\\hoc19\\Downloads\\MetaStudyRoom-integration-first\\MetaStudyRoom-integration-first\\unity\\Assets\\Scripts\\05_Character\\ChairInteraction.cs",
-              "RelativeToolTip": "Assets\\Scripts\\05_Character\\ChairInteraction.cs",
-              "ViewState": "AgIAAGQAAAAAAAAAAAAswIcAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-11-23T08:36:50.304Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "FirebaseConnectionTest.cs",
-              "DocumentMoniker": "C:\\Users\\hoc19\\Downloads\\MetaStudyRoom-integration-first\\MetaStudyRoom-integration-first\\unity\\Assets\\Scripts\\Common\\FirebaseConnectionTest.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\Common\\FirebaseConnectionTest.cs",
-              "ToolTip": "C:\\Users\\hoc19\\Downloads\\MetaStudyRoom-integration-first\\MetaStudyRoom-integration-first\\unity\\Assets\\Scripts\\Common\\FirebaseConnectionTest.cs",
-              "RelativeToolTip": "Assets\\Scripts\\Common\\FirebaseConnectionTest.cs",
-              "ViewState": "AgIAAFYAAAAAAAAAAADwv3sAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-11-19T02:20:31.909Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "MetaStudyStatisticsInstaller.cs",
-              "DocumentMoniker": "C:\\UnityProjects\\GitHub\\MetaStudyRoom\\unity\\Assets\\_Project\\Editor\\MetaStudyStatisticsInstaller.cs",
-              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\..\\UnityProjects\\GitHub\\MetaStudyRoom\\unity\\Assets\\_Project\\Editor\\MetaStudyStatisticsInstaller.cs",
-              "ToolTip": "C:\\UnityProjects\\GitHub\\MetaStudyRoom\\unity\\Assets\\_Project\\Editor\\MetaStudyStatisticsInstaller.cs",
-              "RelativeToolTip": "..\\..\\..\\..\\..\\..\\UnityProjects\\GitHub\\MetaStudyRoom\\unity\\Assets\\_Project\\Editor\\MetaStudyStatisticsInstaller.cs",
-=======
               "DocumentIndex": 1,
               "Title": "MetaStudyStatisticsInstaller.cs",
               "DocumentMoniker": "C:\\UnityProjects\\GitHub\\MetaStudyRoom\\unity\\Assets\\_Project\\Editor\\MetaStudyStatisticsInstaller.cs",
               "RelativeDocumentMoniker": "Assets\\_Project\\Editor\\MetaStudyStatisticsInstaller.cs",
               "ToolTip": "C:\\UnityProjects\\GitHub\\MetaStudyRoom\\unity\\Assets\\_Project\\Editor\\MetaStudyStatisticsInstaller.cs",
               "RelativeToolTip": "Assets\\_Project\\Editor\\MetaStudyStatisticsInstaller.cs",
->>>>>>> 677b6e94d86198058adb6fb64c3dd0f1ddfa1a40
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-11-19T01:35:20.944Z"
             },
             {
               "$type": "Document",
-<<<<<<< HEAD
-              "DocumentIndex": 11,
-              "Title": "RoomUIController.cs",
-              "DocumentMoniker": "C:\\Users\\hoc19\\Downloads\\MetaStudyRoom-integration-first\\MetaStudyRoom-integration-first\\unity\\Assets\\Scripts\\03_RoomManagement\\RoomUIController.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\03_RoomManagement\\RoomUIController.cs",
-              "ToolTip": "C:\\Users\\hoc19\\Downloads\\MetaStudyRoom-integration-first\\MetaStudyRoom-integration-first\\unity\\Assets\\Scripts\\03_RoomManagement\\RoomUIController.cs",
-=======
               "DocumentIndex": 2,
               "Title": "RoomUIController.cs",
               "DocumentMoniker": "C:\\UnityProjects\\GitHub\\MetaStudyRoom\\unity\\Assets\\Scripts\\03_RoomManagement\\RoomUIController.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\03_RoomManagement\\RoomUIController.cs",
               "ToolTip": "C:\\UnityProjects\\GitHub\\MetaStudyRoom\\unity\\Assets\\Scripts\\03_RoomManagement\\RoomUIController.cs",
->>>>>>> 677b6e94d86198058adb6fb64c3dd0f1ddfa1a40
               "RelativeToolTip": "Assets\\Scripts\\03_RoomManagement\\RoomUIController.cs",
               "ViewState": "AgIAAKUBAAAAAAAAAAAswO8BAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",

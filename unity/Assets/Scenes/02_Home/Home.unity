@@ -134,11 +134,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-<<<<<<< HEAD
-  m_IsActive: 1
-=======
   m_IsActive: 0
->>>>>>> 677b6e94d86198058adb6fb64c3dd0f1ddfa1a40
 --- !u!224 &48704113
 RectTransform:
   m_ObjectHideFlags: 0
@@ -160,8 +156,6 @@ RectTransform:
   m_AnchoredPosition: {x: 15, y: -114}
   m_SizeDelta: {x: 290, y: 30}
   m_Pivot: {x: 0, y: 1}
-<<<<<<< HEAD
-=======
 --- !u!1 &49784116
 GameObject:
   m_ObjectHideFlags: 0
@@ -363,7 +357,6 @@ MonoBehaviour:
   m_ChildScaleWidth: 0
   m_ChildScaleHeight: 0
   m_ReverseArrangement: 0
->>>>>>> 677b6e94d86198058adb6fb64c3dd0f1ddfa1a40
 --- !u!1 &63385945
 GameObject:
   m_ObjectHideFlags: 0
@@ -430,11 +423,7 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-<<<<<<< HEAD
-    rgba: 4294967295
-=======
     rgba: 4281868823
->>>>>>> 677b6e94d86198058adb6fb64c3dd0f1ddfa1a40
   m_fontColor: {r: 0.09019608, g: 0.13333334, b: 0.21960784, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
@@ -447,11 +436,7 @@ MonoBehaviour:
   m_spriteAsset: {fileID: 0}
   m_tintAllSprites: 0
   m_StyleSheet: {fileID: 0}
-<<<<<<< HEAD
-  m_TextStyleHashCode: 0
-=======
   m_TextStyleHashCode: -1183493901
->>>>>>> 677b6e94d86198058adb6fb64c3dd0f1ddfa1a40
   m_overrideHtmlColors: 0
   m_faceColor:
     serializedVersion: 2
@@ -475,11 +460,7 @@ MonoBehaviour:
   m_charWidthMaxAdj: 0
   m_TextWrappingMode: 0
   m_wordWrappingRatios: 0.4
-<<<<<<< HEAD
-  m_overflowMode: 1
-=======
   m_overflowMode: 3
->>>>>>> 677b6e94d86198058adb6fb64c3dd0f1ddfa1a40
   m_linkedTextComponent: {fileID: 0}
   parentLinkedComponent: {fileID: 0}
   m_enableKerning: 0
@@ -513,8 +494,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 63385945}
   m_CullTransparentMesh: 1
-<<<<<<< HEAD
-=======
 --- !u!1 &88685919
 GameObject:
   m_ObjectHideFlags: 0
@@ -605,7 +584,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.RectMask2D
   m_Padding: {x: 0, y: 0, z: 0, w: 0}
   m_Softness: {x: 0, y: 0}
->>>>>>> 677b6e94d86198058adb6fb64c3dd0f1ddfa1a40
 --- !u!1 &106594171
 GameObject:
   m_ObjectHideFlags: 0
@@ -672,11 +650,7 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-<<<<<<< HEAD
-    rgba: 4294967295
-=======
     rgba: 4281868823
->>>>>>> 677b6e94d86198058adb6fb64c3dd0f1ddfa1a40
   m_fontColor: {r: 0.09019608, g: 0.13333334, b: 0.21960784, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
@@ -689,11 +663,7 @@ MonoBehaviour:
   m_spriteAsset: {fileID: 0}
   m_tintAllSprites: 0
   m_StyleSheet: {fileID: 0}
-<<<<<<< HEAD
-  m_TextStyleHashCode: 0
-=======
   m_TextStyleHashCode: -1183493901
->>>>>>> 677b6e94d86198058adb6fb64c3dd0f1ddfa1a40
   m_overrideHtmlColors: 0
   m_faceColor:
     serializedVersion: 2
@@ -717,11 +687,7 @@ MonoBehaviour:
   m_charWidthMaxAdj: 0
   m_TextWrappingMode: 0
   m_wordWrappingRatios: 0.4
-<<<<<<< HEAD
-  m_overflowMode: 1
-=======
   m_overflowMode: 3
->>>>>>> 677b6e94d86198058adb6fb64c3dd0f1ddfa1a40
   m_linkedTextComponent: {fileID: 0}
   parentLinkedComponent: {fileID: 0}
   m_enableKerning: 0
@@ -897,11 +863,7 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-<<<<<<< HEAD
-    rgba: 4294967295
-=======
     rgba: 4287793789
->>>>>>> 677b6e94d86198058adb6fb64c3dd0f1ddfa1a40
   m_fontColor: {r: 0.49019608, g: 0.5411765, b: 0.57254905, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
@@ -914,11 +876,7 @@ MonoBehaviour:
   m_spriteAsset: {fileID: 0}
   m_tintAllSprites: 0
   m_StyleSheet: {fileID: 0}
-<<<<<<< HEAD
-  m_TextStyleHashCode: 0
-=======
   m_TextStyleHashCode: -1183493901
->>>>>>> 677b6e94d86198058adb6fb64c3dd0f1ddfa1a40
   m_overrideHtmlColors: 0
   m_faceColor:
     serializedVersion: 2
@@ -987,10 +945,7 @@ GameObject:
   - component: {fileID: 237988885}
   - component: {fileID: 237988887}
   - component: {fileID: 237988886}
-<<<<<<< HEAD
-=======
   - component: {fileID: 237988888}
->>>>>>> 677b6e94d86198058adb6fb64c3dd0f1ddfa1a40
   m_Layer: 0
   m_Name: TodoCard
   m_TagString: Untagged
@@ -1015,10 +970,7 @@ RectTransform:
   - {fileID: 1920544187}
   - {fileID: 48704113}
   - {fileID: 2050649259}
-<<<<<<< HEAD
-=======
   - {fileID: 88685920}
->>>>>>> 677b6e94d86198058adb6fb64c3dd0f1ddfa1a40
   m_Father: {fileID: 405104721}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
@@ -1064,8 +1016,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 237988884}
   m_CullTransparentMesh: 1
-<<<<<<< HEAD
-=======
 --- !u!114 &237988888
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1085,7 +1035,6 @@ MonoBehaviour:
   addPanel: {fileID: 51574901}
   addInput: {fileID: 1373714210}
   addButton: {fileID: 1502728810}
->>>>>>> 677b6e94d86198058adb6fb64c3dd0f1ddfa1a40
 --- !u!1 &324387077
 GameObject:
   m_ObjectHideFlags: 0
@@ -1152,11 +1101,7 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-<<<<<<< HEAD
-    rgba: 4294967295
-=======
     rgba: 4281868823
->>>>>>> 677b6e94d86198058adb6fb64c3dd0f1ddfa1a40
   m_fontColor: {r: 0.09019608, g: 0.13333334, b: 0.21960784, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
@@ -1169,11 +1114,7 @@ MonoBehaviour:
   m_spriteAsset: {fileID: 0}
   m_tintAllSprites: 0
   m_StyleSheet: {fileID: 0}
-<<<<<<< HEAD
-  m_TextStyleHashCode: 0
-=======
   m_TextStyleHashCode: -1183493901
->>>>>>> 677b6e94d86198058adb6fb64c3dd0f1ddfa1a40
   m_overrideHtmlColors: 0
   m_faceColor:
     serializedVersion: 2
@@ -1197,11 +1138,7 @@ MonoBehaviour:
   m_charWidthMaxAdj: 0
   m_TextWrappingMode: 0
   m_wordWrappingRatios: 0.4
-<<<<<<< HEAD
-  m_overflowMode: 1
-=======
   m_overflowMode: 3
->>>>>>> 677b6e94d86198058adb6fb64c3dd0f1ddfa1a40
   m_linkedTextComponent: {fileID: 0}
   parentLinkedComponent: {fileID: 0}
   m_enableKerning: 0
@@ -1613,11 +1550,7 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-<<<<<<< HEAD
-    rgba: 4294967295
-=======
     rgba: 4281868823
->>>>>>> 677b6e94d86198058adb6fb64c3dd0f1ddfa1a40
   m_fontColor: {r: 0.09019608, g: 0.13333334, b: 0.21960784, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
@@ -1630,11 +1563,7 @@ MonoBehaviour:
   m_spriteAsset: {fileID: 0}
   m_tintAllSprites: 0
   m_StyleSheet: {fileID: 0}
-<<<<<<< HEAD
-  m_TextStyleHashCode: 0
-=======
   m_TextStyleHashCode: -1183493901
->>>>>>> 677b6e94d86198058adb6fb64c3dd0f1ddfa1a40
   m_overrideHtmlColors: 0
   m_faceColor:
     serializedVersion: 2
@@ -1658,11 +1587,7 @@ MonoBehaviour:
   m_charWidthMaxAdj: 0
   m_TextWrappingMode: 0
   m_wordWrappingRatios: 0.4
-<<<<<<< HEAD
-  m_overflowMode: 1
-=======
   m_overflowMode: 3
->>>>>>> 677b6e94d86198058adb6fb64c3dd0f1ddfa1a40
   m_linkedTextComponent: {fileID: 0}
   parentLinkedComponent: {fileID: 0}
   m_enableKerning: 0
@@ -1696,8 +1621,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 523692464}
   m_CullTransparentMesh: 1
-<<<<<<< HEAD
-=======
 --- !u!1 &534611508
 GameObject:
   m_ObjectHideFlags: 0
@@ -1789,7 +1712,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 534611508}
   m_CullTransparentMesh: 1
->>>>>>> 677b6e94d86198058adb6fb64c3dd0f1ddfa1a40
 --- !u!1 &553131895
 GameObject:
   m_ObjectHideFlags: 0
@@ -1948,11 +1870,7 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-<<<<<<< HEAD
-    rgba: 4294967295
-=======
     rgba: 4281868823
->>>>>>> 677b6e94d86198058adb6fb64c3dd0f1ddfa1a40
   m_fontColor: {r: 0.09019608, g: 0.13333334, b: 0.21960784, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
@@ -1965,11 +1883,7 @@ MonoBehaviour:
   m_spriteAsset: {fileID: 0}
   m_tintAllSprites: 0
   m_StyleSheet: {fileID: 0}
-<<<<<<< HEAD
-  m_TextStyleHashCode: 0
-=======
   m_TextStyleHashCode: -1183493901
->>>>>>> 677b6e94d86198058adb6fb64c3dd0f1ddfa1a40
   m_overrideHtmlColors: 0
   m_faceColor:
     serializedVersion: 2
@@ -1993,11 +1907,7 @@ MonoBehaviour:
   m_charWidthMaxAdj: 0
   m_TextWrappingMode: 0
   m_wordWrappingRatios: 0.4
-<<<<<<< HEAD
-  m_overflowMode: 1
-=======
   m_overflowMode: 3
->>>>>>> 677b6e94d86198058adb6fb64c3dd0f1ddfa1a40
   m_linkedTextComponent: {fileID: 0}
   parentLinkedComponent: {fileID: 0}
   m_enableKerning: 0
@@ -2058,11 +1968,7 @@ RectTransform:
   m_GameObject: {fileID: 668483481}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-<<<<<<< HEAD
-  m_LocalScale: {x: 1, y: 1, z: 1}
-=======
   m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
->>>>>>> 677b6e94d86198058adb6fb64c3dd0f1ddfa1a40
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 477615441}
@@ -2148,11 +2054,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-<<<<<<< HEAD
-  m_IsActive: 1
-=======
   m_IsActive: 0
->>>>>>> 677b6e94d86198058adb6fb64c3dd0f1ddfa1a40
 --- !u!224 &694367545
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2240,11 +2142,7 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-<<<<<<< HEAD
-    rgba: 4294967295
-=======
     rgba: 4281868823
->>>>>>> 677b6e94d86198058adb6fb64c3dd0f1ddfa1a40
   m_fontColor: {r: 0.09019608, g: 0.13333334, b: 0.21960784, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
@@ -2257,11 +2155,7 @@ MonoBehaviour:
   m_spriteAsset: {fileID: 0}
   m_tintAllSprites: 0
   m_StyleSheet: {fileID: 0}
-<<<<<<< HEAD
-  m_TextStyleHashCode: 0
-=======
   m_TextStyleHashCode: -1183493901
->>>>>>> 677b6e94d86198058adb6fb64c3dd0f1ddfa1a40
   m_overrideHtmlColors: 0
   m_faceColor:
     serializedVersion: 2
@@ -2285,11 +2179,7 @@ MonoBehaviour:
   m_charWidthMaxAdj: 0
   m_TextWrappingMode: 0
   m_wordWrappingRatios: 0.4
-<<<<<<< HEAD
-  m_overflowMode: 1
-=======
   m_overflowMode: 3
->>>>>>> 677b6e94d86198058adb6fb64c3dd0f1ddfa1a40
   m_linkedTextComponent: {fileID: 0}
   parentLinkedComponent: {fileID: 0}
   m_enableKerning: 0
@@ -2400,11 +2290,7 @@ Canvas:
   m_OverridePixelPerfect: 0
   m_SortingBucketNormalizedSize: 0
   m_VertexColorAlwaysGammaSpace: 0
-<<<<<<< HEAD
-  m_AdditionalShaderChannelsFlag: 0
-=======
   m_AdditionalShaderChannelsFlag: 25
->>>>>>> 677b6e94d86198058adb6fb64c3dd0f1ddfa1a40
   m_UpdateRectTransformForStandalone: 0
   m_SortingLayerID: 0
   m_SortingOrder: 0
@@ -2430,8 +2316,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
-<<<<<<< HEAD
-=======
 --- !u!1 &1014178598
 GameObject:
   m_ObjectHideFlags: 0
@@ -2509,7 +2393,6 @@ MonoBehaviour:
   m_ChildScaleWidth: 0
   m_ChildScaleHeight: 0
   m_ReverseArrangement: 0
->>>>>>> 677b6e94d86198058adb6fb64c3dd0f1ddfa1a40
 --- !u!1 &1021212671
 GameObject:
   m_ObjectHideFlags: 0
@@ -2577,11 +2460,7 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-<<<<<<< HEAD
-    rgba: 4294967295
-=======
     rgba: 4287793789
->>>>>>> 677b6e94d86198058adb6fb64c3dd0f1ddfa1a40
   m_fontColor: {r: 0.49019608, g: 0.5411765, b: 0.57254905, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
@@ -2594,11 +2473,7 @@ MonoBehaviour:
   m_spriteAsset: {fileID: 0}
   m_tintAllSprites: 0
   m_StyleSheet: {fileID: 0}
-<<<<<<< HEAD
-  m_TextStyleHashCode: 0
-=======
   m_TextStyleHashCode: -1183493901
->>>>>>> 677b6e94d86198058adb6fb64c3dd0f1ddfa1a40
   m_overrideHtmlColors: 0
   m_faceColor:
     serializedVersion: 2
@@ -2804,8 +2679,6 @@ MonoScript:
   m_ClassName: MetaStudyTodoBinding
   m_Namespace: 
   m_AssemblyName: Assembly-CSharp
-<<<<<<< HEAD
-=======
 --- !u!1 &1197216543
 GameObject:
   m_ObjectHideFlags: 0
@@ -2873,7 +2746,6 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls: []
->>>>>>> 677b6e94d86198058adb6fb64c3dd0f1ddfa1a40
 --- !u!1 &1208596472
 GameObject:
   m_ObjectHideFlags: 0
@@ -3145,8 +3017,6 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_IsOn: 1
-<<<<<<< HEAD
-=======
 --- !u!1 &1373714207
 GameObject:
   m_ObjectHideFlags: 0
@@ -3483,7 +3353,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1394182865}
   m_CullTransparentMesh: 1
->>>>>>> 677b6e94d86198058adb6fb64c3dd0f1ddfa1a40
 --- !u!1 &1475488680
 GameObject:
   m_ObjectHideFlags: 0
@@ -3692,8 +3561,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1477938303}
   m_CullTransparentMesh: 1
-<<<<<<< HEAD
-=======
 --- !u!1 &1502728808
 GameObject:
   m_ObjectHideFlags: 0
@@ -3973,7 +3840,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1508615564}
   m_CullTransparentMesh: 1
->>>>>>> 677b6e94d86198058adb6fb64c3dd0f1ddfa1a40
 --- !u!1 &1511228980
 GameObject:
   m_ObjectHideFlags: 0
@@ -4421,11 +4287,7 @@ MonoBehaviour:
   m_spriteAsset: {fileID: 0}
   m_tintAllSprites: 0
   m_StyleSheet: {fileID: 0}
-<<<<<<< HEAD
-  m_TextStyleHashCode: 0
-=======
   m_TextStyleHashCode: -1183493901
->>>>>>> 677b6e94d86198058adb6fb64c3dd0f1ddfa1a40
   m_overrideHtmlColors: 0
   m_faceColor:
     serializedVersion: 2
@@ -4449,11 +4311,7 @@ MonoBehaviour:
   m_charWidthMaxAdj: 0
   m_TextWrappingMode: 0
   m_wordWrappingRatios: 0.4
-<<<<<<< HEAD
-  m_overflowMode: 1
-=======
   m_overflowMode: 3
->>>>>>> 677b6e94d86198058adb6fb64c3dd0f1ddfa1a40
   m_linkedTextComponent: {fileID: 0}
   parentLinkedComponent: {fileID: 0}
   m_enableKerning: 0
@@ -4514,11 +4372,7 @@ RectTransform:
   m_GameObject: {fileID: 1604985841}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-<<<<<<< HEAD
-  m_LocalScale: {x: 1, y: 1, z: 1}
-=======
   m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
->>>>>>> 677b6e94d86198058adb6fb64c3dd0f1ddfa1a40
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 694367545}
@@ -4557,11 +4411,7 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-<<<<<<< HEAD
-    rgba: 4294967295
-=======
     rgba: 4287793789
->>>>>>> 677b6e94d86198058adb6fb64c3dd0f1ddfa1a40
   m_fontColor: {r: 0.49019608, g: 0.5411765, b: 0.57254905, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
@@ -4574,11 +4424,7 @@ MonoBehaviour:
   m_spriteAsset: {fileID: 0}
   m_tintAllSprites: 0
   m_StyleSheet: {fileID: 0}
-<<<<<<< HEAD
-  m_TextStyleHashCode: 0
-=======
   m_TextStyleHashCode: -1183493901
->>>>>>> 677b6e94d86198058adb6fb64c3dd0f1ddfa1a40
   m_overrideHtmlColors: 0
   m_faceColor:
     serializedVersion: 2
@@ -5108,11 +4954,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-<<<<<<< HEAD
-  m_IsActive: 1
-=======
   m_IsActive: 0
->>>>>>> 677b6e94d86198058adb6fb64c3dd0f1ddfa1a40
 --- !u!224 &1920544187
 RectTransform:
   m_ObjectHideFlags: 0
@@ -5200,11 +5042,7 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-<<<<<<< HEAD
-    rgba: 4294967295
-=======
     rgba: 4287793789
->>>>>>> 677b6e94d86198058adb6fb64c3dd0f1ddfa1a40
   m_fontColor: {r: 0.49019608, g: 0.5411765, b: 0.57254905, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
@@ -5217,11 +5055,7 @@ MonoBehaviour:
   m_spriteAsset: {fileID: 0}
   m_tintAllSprites: 0
   m_StyleSheet: {fileID: 0}
-<<<<<<< HEAD
-  m_TextStyleHashCode: 0
-=======
   m_TextStyleHashCode: -1183493901
->>>>>>> 677b6e94d86198058adb6fb64c3dd0f1ddfa1a40
   m_overrideHtmlColors: 0
   m_faceColor:
     serializedVersion: 2
@@ -5279,8 +5113,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1944117983}
   m_CullTransparentMesh: 1
-<<<<<<< HEAD
-=======
 --- !u!1 &1963254946
 GameObject:
   m_ObjectHideFlags: 0
@@ -5539,7 +5371,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1985411463}
   m_CullTransparentMesh: 1
->>>>>>> 677b6e94d86198058adb6fb64c3dd0f1ddfa1a40
 --- !u!1 &2050649258
 GameObject:
   m_ObjectHideFlags: 0
@@ -5555,11 +5386,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-<<<<<<< HEAD
-  m_IsActive: 1
-=======
   m_IsActive: 0
->>>>>>> 677b6e94d86198058adb6fb64c3dd0f1ddfa1a40
 --- !u!224 &2050649259
 RectTransform:
   m_ObjectHideFlags: 0
@@ -5722,11 +5549,7 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-<<<<<<< HEAD
-    rgba: 4294967295
-=======
     rgba: 4287793789
->>>>>>> 677b6e94d86198058adb6fb64c3dd0f1ddfa1a40
   m_fontColor: {r: 0.49019608, g: 0.5411765, b: 0.57254905, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
@@ -5739,11 +5562,7 @@ MonoBehaviour:
   m_spriteAsset: {fileID: 0}
   m_tintAllSprites: 0
   m_StyleSheet: {fileID: 0}
-<<<<<<< HEAD
-  m_TextStyleHashCode: 0
-=======
   m_TextStyleHashCode: -1183493901
->>>>>>> 677b6e94d86198058adb6fb64c3dd0f1ddfa1a40
   m_overrideHtmlColors: 0
   m_faceColor:
     serializedVersion: 2
