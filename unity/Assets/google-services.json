@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "398759572004",
+    "project_id": "metastudyroom",
+    "storage_bucket": "metastudyroom.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:398759572004:android:d41bec0c289f4a1eb21eb1",
+        "android_client_info": {
+          "package_name": "com.metastudyroom.app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD66LcaDysJR3C-K0IyzwepXr2RV8-xm18"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
