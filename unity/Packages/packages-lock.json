@@ -1,11 +1,14 @@
 {
   "dependencies": {
+<<<<<<< HEAD
     "com.unity.2d.sprite": {
       "version": "1.0.0",
       "depth": 0,
       "source": "builtin",
       "dependencies": {}
     },
+=======
+>>>>>>> 677b6e94d86198058adb6fb64c3dd0f1ddfa1a40
     "com.unity.ai.navigation": {
       "version": "2.0.14",
       "depth": 0,
@@ -93,6 +96,7 @@
         "com.unity.modules.uielements": "1.0.0"
       }
     },
+<<<<<<< HEAD
     "com.unity.netcode.gameobjects": {
       "version": "2.14.0",
       "depth": 0,
@@ -106,6 +110,11 @@
     "com.unity.nuget.mono-cecil": {
       "version": "1.11.6",
       "depth": 1,
+=======
+    "com.unity.nuget.mono-cecil": {
+      "version": "1.11.6",
+      "depth": 3,
+>>>>>>> 677b6e94d86198058adb6fb64c3dd0f1ddfa1a40
       "source": "registry",
       "dependencies": {},
       "url": "https://packages.unity.com"
@@ -190,6 +199,7 @@
       },
       "url": "https://packages.unity.com"
     },
+<<<<<<< HEAD
     "com.unity.transport": {
       "version": "2.7.4",
       "depth": 1,
@@ -201,6 +211,8 @@
       },
       "url": "https://packages.unity.com"
     },
+=======
+>>>>>>> 677b6e94d86198058adb6fb64c3dd0f1ddfa1a40
     "com.unity.ugui": {
       "version": "2.0.0",
       "depth": 0,
